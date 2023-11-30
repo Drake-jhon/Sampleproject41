@@ -13,6 +13,7 @@ public class SamplePageTest {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		driver.get("https://www.google.com/");
 	WebElement src=	driver.findElement(By.name("q"));
 //	WebElement src=	driver.findElement(By.xpath("q"));
